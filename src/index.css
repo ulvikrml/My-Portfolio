@@ -7,7 +7,7 @@
     @apply bg-gray-200 px-4 h-12
   }
   .name-letter{
-    @apply hover:text-mainBlue inline-block hover:-translate-y-2 transition-all cursor-pointer bg-slate-500
+    @apply hover:text-mainBlue inline-block  transition-all cursor-pointer
   }
 }
 @layer base{

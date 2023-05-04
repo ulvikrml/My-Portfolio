@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         mainBlue : '#00C7FF'
-      }
+      },
+      margin: ['hover']
     },
   },
   plugins: [],
