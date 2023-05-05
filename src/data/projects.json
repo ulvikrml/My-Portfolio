@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "title": "DukaMarket",
+        "img" : "projects/dukamarket.png",
+        "desc": "All the resources you need to watch movies.",
+        "link": "duka-market.netlify.app/",
+        "github": "https://github.com/ulvikrml/Dukamarket-ecommerce",
+        "tags": [
+            "HTML",
+            "SCSS",
+            "Javascript"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "FlexStart",
+        "img": "projects/flexstart.png",
+        "desc": "All the resources you need to watch movies.",
+        "link": "https://ulvikrml.github.io/FlexStart-template/",
+        "github" : "https://github.com/ulvikrml/FlexStart-template",
+        "tags": [
+            "HTML",
+            "CSS/ BOOTSTRAP",
+            "Javascript"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Eduford",
+        "img": "projects/eduford.png",
+        "link": "https://ulvikrml.github.io/Eduford-template/index.html",
+        "github": "https://github.com/ulvikrml/Eduford-template",
+        "tags": [
+            "HTML",
+            "CSS",
+            "Javascript"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Meal-kuhj",
+        "img": "projects/mealrecipe.png",
+        "desc": "All the resources you need to watch movies.", "link": "https://react-meal-recipe-site.netlify.app/",
+        "github" : "https://github.com/ulvikrml/Meal-Recipes-React",
+        "tags": [
+            "React",
+            "SCSS",
+            "API"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Add-to-cart",
+        "img": "projects/addtocart.png",
+        "desc": "All the resources you need to watch movies.",
+        "link" : "https://add-to-card-mu.vercel.app/",
+        "github": "https://github.com/ulvikrml/Add-to-card",
+        "tags": [
+            "React",
+            "ContextAPI",
+            "CSS"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Javascript Tasks",
+        "img": "projects/jstasks.png",
+        "desc": "All the resources you need to watch movies.",
+        "link" : "https://ulvikrmljavascripttasks.netlify.app/",
+        "github": "https://github.com/ulvikrml/JS-Tasks",
+        "tags": [
+            "Javascript"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "React Tasks",
+        "img": "projects/reacttasks.png",
+        "desc": "All the resources you need to watch movies.",
+        "link": "https://react-all-tasks.netlify.app/",
+        "github" : "https://github.com/ulvikrml/React-tasks",
+        "tags": [
+            "React"
+        ]
+    }
+]

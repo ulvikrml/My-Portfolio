@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         mainBlue : '#00C7FF'
       },
+      padding: {
+        'sm': '6px',
+      },
       margin: ['hover'],
       keyframes: {
         wiggle: {

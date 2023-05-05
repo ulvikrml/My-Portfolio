@@ -9,18 +9,6 @@
   .name-letter{
     @apply hover:text-mainBlue inline-block  transition-all cursor-pointer
   }
-  .delay300{
-    animation-delay: 300ms !important;
-  }
-  .delay500{
-    animation-delay: 500ms !important; 
-  }
-  .delay600{
-    animation-delay: 500ms !important; 
-  }
-  .delay700{
-    animation-delay: 700ms !important;
-  }
 }
 @layer base{
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
@@ -32,5 +20,17 @@
   body{
     background: #000A1F;
     font-family: 'Noto Sans JP', sans-serif;
+  }
+  .delay300{
+    animation-delay: 300ms !important;
+  }
+  .delay500{
+    animation-delay: 500ms !important; 
+  }
+  .delay600{
+    animation-delay: 500ms !important; 
+  }
+  .delay700{
+    animation-delay: 700ms !important;
   }
 }
