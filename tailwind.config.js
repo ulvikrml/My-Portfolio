@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -6,9 +7,28 @@ module.exports = {
       colors: {
         mainBlue : '#00C7FF'
       },
-      margin: ['hover']
+      margin: ['hover'],
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'translateY(-3px)' },
+          '50%': { transform: 'translateY(3px)' },
+        }
+      },
+      animation: {
+        imgbounce: 'wiggle 2s ease-in-out infinite',
+      },
+      rotate: {
+        '360': '360deg',
+      }
     },
   },
-  plugins: [],
+  
+  variants: {
+    extend: {
+      animationDelay: ['hover', 'group-hover'],
+    },
+  },
+  plugins: [
+  ],
 }
 
