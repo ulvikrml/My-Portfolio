@@ -625,12 +625,12 @@ body{
   position: relative;
 }
 
-.left-\[-180px\] {
-  left: -180px;
+.left-\[-140px\] {
+  left: -140px;
 }
 
-.left-\[-25px\] {
-  left: -25px;
+.left-\[-180px\] {
+  left: -180px;
 }
 
 .left-\[-70px\] {
@@ -649,16 +649,12 @@ body{
   left: 60px;
 }
 
-.right-20 {
-  right: 5rem;
+.right-80 {
+  right: 20rem;
 }
 
-.right-32 {
-  right: 8rem;
-}
-
-.right-44 {
-  right: 11rem;
+.right-\[-100px\] {
+  right: -100px;
 }
 
 .right-\[-60px\] {
@@ -673,20 +669,24 @@ body{
   right: 20px;
 }
 
-.top-24 {
-  top: 6rem;
+.right-\[30px\] {
+  right: 30px;
 }
 
-.top-28 {
-  top: 7rem;
+.top-60 {
+  top: 15rem;
 }
 
-.top-44 {
-  top: 11rem;
+.top-64 {
+  top: 16rem;
 }
 
 .top-\[-15px\] {
   top: -15px;
+}
+
+.top-\[-20px\] {
+  top: -20px;
 }
 
 .top-\[-280px\] {
@@ -717,92 +717,20 @@ body{
   top: 115px;
 }
 
-.right-0 {
+.right-\[0px\] {
   right: 0px;
 }
 
-.right-\[\] {
-  right: ;
-}
-
-.right-\[-30px\] {
-  right: -30px;
-}
-
-.right-\[-120px\] {
-  right: -120px;
-}
-
-.right-\[-100px\] {
-  right: -100px;
-}
-
-.left-\[-100px\] {
-  left: -100px;
-}
-
-.left-\[-120px\] {
-  left: -120px;
-}
-
-.left-\[-140px\] {
-  left: -140px;
-}
-
-.top-0 {
+.top-\[0px\] {
   top: 0px;
-}
-
-.top-14 {
-  top: 3.5rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.right-\[-70px\] {
-  right: -70px;
-}
-
-.top-40 {
-  top: 10rem;
-}
-
-.top-80 {
-  top: 20rem;
-}
-
-.top-72 {
-  top: 18rem;
-}
-
-.top-60 {
-  top: 15rem;
-}
-
-.top-56 {
-  top: 14rem;
-}
-
-.right-80 {
-  right: 20rem;
-}
-
-.right-96 {
-  right: 24rem;
-}
-
-.-right-80 {
-  right: -20rem;
-}
-
-.top-64 {
-  top: 16rem;
 }
 
 .z-minus {
   z-index: -1;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 
 .mb-1 {
@@ -821,6 +749,10 @@ body{
   margin-bottom: 0.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .ml-10 {
   margin-left: 2.5rem;
 }
@@ -833,6 +765,10 @@ body{
   margin-top: 0.25rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-28 {
   margin-top: 7rem;
 }
@@ -843,10 +779,6 @@ body{
 
 .mt-\[200px\] {
   margin-top: 200px;
-}
-
-.mt-\[0px\] {
-  margin-top: 0px;
 }
 
 .mt-\[40px\] {
@@ -865,6 +797,10 @@ body{
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-\[100px\] {
   height: 100px;
 }
@@ -875,6 +811,10 @@ body{
 
 .w-1\/5 {
   width: 20%;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-16 {
@@ -945,6 +885,10 @@ body{
           animation: wiggle 2s ease-in-out infinite;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -953,12 +897,24 @@ body{
   flex-wrap: wrap;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-center {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-10 {
@@ -969,8 +925,20 @@ body{
   gap: 0.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-\[6px\] {
   gap: 6px;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .rounded-full {
@@ -1067,6 +1035,11 @@ body{
   line-height: 2rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-\[66px\] {
   font-size: 66px;
 }
@@ -1099,6 +1072,10 @@ body{
   font-weight: 600;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .text-\[\#7b89a8\] {
   --tw-text-opacity: 1;
   color: rgb(123 137 168 / var(--tw-text-opacity));
@@ -1114,9 +1091,18 @@ body{
   color: rgb(0 199 255 / var(--tw-text-opacity));
 }
 
+.text-textGray {
+  --tw-text-opacity: 1;
+  color: rgb(123 137 168 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .transition-all {
@@ -1158,32 +1144,32 @@ body{
 }
 
 @media (min-width: 1024px) {
-  .lg\:right-20 {
-    right: 5rem;
-  }
-
   .lg\:left-\[-25px\] {
     left: -25px;
   }
 
-  .lg\:top-28 {
-    top: 7rem;
+  .lg\:right-20 {
+    right: 5rem;
   }
 
   .lg\:right-32 {
     right: 8rem;
   }
 
+  .lg\:right-44 {
+    right: 11rem;
+  }
+
   .lg\:top-24 {
     top: 6rem;
   }
 
-  .lg\:top-44 {
-    top: 11rem;
+  .lg\:top-28 {
+    top: 7rem;
   }
 
-  .lg\:right-44 {
-    right: 11rem;
+  .lg\:top-44 {
+    top: 11rem;
   }
 
   .lg\:mb-0 {
