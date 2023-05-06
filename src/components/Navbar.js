@@ -5,7 +5,7 @@ const Navbar = () => {
         <nav className='w-full flex justify-between px-[100px] h-[100px] items-center'>
             <div className='text-white flex gap-2 text-xl font-bold items-center'>
                 <a href="/">
-                    <img className='w-[60px] hover:scale-75 hover:rotate-360 transition-all duration-500' src={require('../assets/images/logo/logo.png')} alt="logo" />
+                    <img className='w-[60px] hover:scale-75 hover:rotate-360 transition-all duration-500' src='/images/logo/logo.png' alt="logo" />
                 </a>
                 <p>
                     <span className='name-letter'>U</span>
