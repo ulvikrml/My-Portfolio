@@ -4,7 +4,7 @@
         "title": "DukaMarket",
         "img" : "/images/projects/dukamarket.png",
         "desc": "All the resources you need to watch movies.",
-        "link": "duka-market.netlify.app/",
+        "link": "https://duka-market.netlify.app/",
         "github": "https://github.com/ulvikrml/Dukamarket-ecommerce",
         "tags": [
             "HTML",
@@ -29,6 +29,7 @@
         "id": 3,
         "title": "Eduford",
         "img": "/images/projects/eduford.png",
+        "desc": "All the resources you need to watch movies.",
         "link": "https://ulvikrml.github.io/Eduford-template/index.html",
         "github": "https://github.com/ulvikrml/Eduford-template",
         "tags": [
@@ -58,8 +59,8 @@
         "github": "https://github.com/ulvikrml/Add-to-card",
         "tags": [
             "React",
-            "ContextAPI",
-            "CSS"
+            "CSS",
+            "ContextAPI"
         ]
     },
     {

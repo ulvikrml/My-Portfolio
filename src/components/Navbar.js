@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
         <nav className='w-full flex justify-between px-[100px] h-[100px] items-center'>
             <div className='text-white flex gap-2 text-xl font-bold items-center'>
-                <a href="/">
+                <Link to="/">
                     <img className='w-[60px] hover:scale-75 hover:rotate-360 transition-all duration-500' src='/images/logo/logo.png' alt="logo" />
-                </a>
+                </Link>
                 <p>
                     <span className='name-letter'>U</span>
                     <span className='name-letter'>l</span>
@@ -24,8 +25,8 @@ const Navbar = () => {
                 </p>
             </div>
             <div>
-                <a className='text-white font-semibold' href="/">Home</a>
-                <a className="text-gray-500 ml-10 font-semibold" href="/">Projects</a>
+                <Link className='text-white font-semibold' to="/">Home</Link>
+                <Link className="text-gray-500 ml-10 font-semibold" to="/projects">Projects</Link>
             </div>
         </nav >
     )
