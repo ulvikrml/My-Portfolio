@@ -9,7 +9,7 @@ const Projects = () => {
                 <div className='text-center'>
                     <h2 className='text-6xl text-white mb-6 relative'>
                         Projects
-                        <img className='w-10 absolute right-[0px] top-[0px]' src="/images/stickers/code.svg" alt="codingsticker" />
+                        <img className='w-10 absolute' src="/images/stickers/code.svg" alt="codingsticker" />
                     </h2>
                     <p className='text-textGray'>I've built cool apps and websites using anything from HTML to React. Here are some of my favorite projects over the course of my journey.</p>
                 </div>
