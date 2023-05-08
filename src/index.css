@@ -4,7 +4,7 @@
 
 @layer components{
   .btn{
-    @apply bg-gray-200 px-4 h-12
+    @apply text-white border-2 rounded-full hover:bg-mainBlue transition-all hover:border-mainBlue
   }
   .name-letter{
     @apply hover:text-mainBlue inline-block  transition-all cursor-pointer
@@ -32,5 +32,14 @@
   }
   .delay700{
     animation-delay: 700ms !important;
+  }
+  
+  .image{
+    margin-inline: auto;
+    width: 80%;
+    height: 170px;
+    object-fit: cover;
+    object-position: center top;
+    margin-top: -160px;
   }
 }

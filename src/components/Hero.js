@@ -17,7 +17,7 @@ const Hero = () => {
                 <img src='/images/stickers/paintbrush.svg' alt='paintbrush' className='absolute right-[-90px] top-[-60px] animate-imgbounce delay700' />
                 <img src='/images/stickers/laptop.svg' alt='laptop' className='absolute right-[-60px] top-[100px] w-56 animate-imgbounce delay600' />
             </div>
-            <a href="/" className='text-white text-xl px-8 py-4 border-2 rounded-full hover:bg-mainBlue transition-all hover:border-mainBlue'>Tell me more</a>
+            <a href="/" className='btn text-xl px-8 py-4 mt-4'>Tell me more</a>
         </section>
     )
 }
