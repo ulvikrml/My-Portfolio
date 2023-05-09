@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 
 const Projects = () => {
     return (
-        <main className='mt-[40px] px-[100px]'>
+        <main className='mt-10 px-[100px] mb-20'>
             <div className='flex items-center flex-col '>
                 <div className='text-center'>
                     <h2 className='text-6xl text-white mb-6 relative'>

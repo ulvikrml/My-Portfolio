@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Projects = () => {
   return (
-    <section className='mt-[200px] px-[100px]'>
+    <section className='mt-[200px] px-[100px]' id='projects'>
         <h3>
         Here are a few of my favorite projects.
         </h3>

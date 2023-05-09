@@ -4,11 +4,12 @@
 
 @layer components{
   .btn{
-    @apply text-white border-2 rounded-full hover:bg-mainBlue transition-all hover:border-mainBlue
+    @apply text-white border-2 rounded-full hover:bg-mainBlue transition-all hover:border-mainBlue cursor-pointer
   }
   .name-letter{
     @apply hover:text-mainBlue inline-block  transition-all cursor-pointer
   }
+
 }
 @layer base{
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
@@ -34,12 +35,4 @@
     animation-delay: 700ms !important;
   }
   
-  .image{
-    margin-inline: auto;
-    width: 80%;
-    height: 170px;
-    object-fit: cover;
-    object-position: center top;
-    margin-top: -160px;
-  }
 }

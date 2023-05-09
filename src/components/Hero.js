@@ -1,6 +1,12 @@
 import React from 'react'
 
 const Hero = () => {
+    const handleClickScroll = () => {
+        const element = document.getElementById('projects');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
     return (
         <section className='flex flex-col items-center relative pt-16'>
             <p className='text-xl text-white'>Hey, I'm Ulvi.</p>
@@ -17,7 +23,7 @@ const Hero = () => {
                 <img src='/images/stickers/paintbrush.svg' alt='paintbrush' className='absolute right-[-90px] top-[-60px] animate-imgbounce delay700' />
                 <img src='/images/stickers/laptop.svg' alt='laptop' className='absolute right-[-60px] top-[100px] w-56 animate-imgbounce delay600' />
             </div>
-            <a href="/" className='btn text-xl px-8 py-4 mt-4'>Tell me more</a>
+            <button onClick={handleClickScroll} className='btn text-xl px-8 py-4 mt-4'>Tell me more</button>
         </section>
     )
 }

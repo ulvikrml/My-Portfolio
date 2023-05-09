@@ -26,7 +26,6 @@ const Contact = () => {
                 </CopyToClipboard>
             </div>
             <img className="w-4/5 h-40 object-cover -mt-40 mx-auto object-top" src="/images/stickers/fancyLines.svg" alt='fancyLines' />
-          
         </section>
     )
 }

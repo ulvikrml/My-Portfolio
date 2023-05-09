@@ -73,13 +73,4 @@ export const footerData =  [
     }
 ]
 
-export const logos = [
-    {
-        link: "images/footer/react-logo.svg"
-    },
-    {
-        link: "images/footer/bootstrap-logo.svg"
-    }
-]
-
-export const repoLink = "https://github.com/asgarliafin/My-Portfolio";
+export const repoLink = "https://github.com/ulvikrml/My-Portfolio";

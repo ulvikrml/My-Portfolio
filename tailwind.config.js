@@ -5,7 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mainBlue : '#00C7FF',
+        mainBlue : {
+          DEFAULT : '#00C7FF',
+          'light' : '#00698F'
+        },
         textGray : '#7b89a8'
       },
       padding: {
@@ -26,6 +29,9 @@ module.exports = {
       },
       zIndex: {
         'minus': '-1',
+      },
+      borderWidth: {
+        'xs': '0.5px',
       }
     },
   },
