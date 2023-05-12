@@ -8,12 +8,14 @@ import Footer from './layout/Footer'
 const App = () => {
   return (
     <>
-    <Router>
+      <Router>
         <Navbar></Navbar>
-        <Routes>
-          <Route path={'/'} element={<Home/>}/>
-          <Route path={'projects'} element={<Projects/>}/>
-        </Routes>
+        <main className='overflow-x-hidden'>
+          <Routes>
+            <Route path={'/'} element={<Home />} />
+            <Route path={'projects'} element={<Projects />} />
+          </Routes>
+        </main>
         <Footer></Footer>
       </Router>
     </>

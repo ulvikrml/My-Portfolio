@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav className='w-full flex justify-between px-[100px] h-[100px] items-center'>
+        <nav className='w-full flex justify-between h-[80px] items-center container mx-auto px-5'>
             <div className='text-white flex gap-2 text-xl font-bold items-center'>
                 <Link to="/">
                     <img className='w-[60px] hover:scale-75 hover:rotate-360 transition-all duration-500' src='/images/logo/logo.png' alt="logo" />

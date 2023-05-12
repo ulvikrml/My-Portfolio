@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 
 const Projects = () => {
     return (
-        <main className='mt-10 px-[100px] mb-20'>
+        <div className='mt-10 px-[100px] mb-20'>
             <div className='flex items-center flex-col '>
                 <div className='text-center'>
                     <h2 className='text-6xl text-white mb-6 relative'>
@@ -20,7 +20,7 @@ const Projects = () => {
                     <p class="text-textGray text-center text-sm italic mt-8">Hey, hey, hey... I've got even more on <a className='text-mainBlue underline' target='_blank' rel='noreferrer' href="https://github.com/ulvikrml">my GitHub</a>!</p>
                 </div>
             </div>
-        </main>
+        </div>
     )
 }
 

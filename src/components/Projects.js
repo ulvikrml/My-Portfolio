@@ -9,7 +9,7 @@ const Projects = () => {
         <h3>
         Here are a few of my favorite projects.
         </h3>
-        <div className='flex gap-10 flex-col lg:flex-row '>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
           {ProjectsData.slice(0, 3).map((project, i) => <ProjectCard key={project.id} {...project} />)}
         </div>
         <div className='mt-8 w-full'>
