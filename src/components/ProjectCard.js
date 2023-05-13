@@ -2,11 +2,11 @@ import React from 'react'
 import { BiLinkExternal } from 'react-icons/bi';
 import { FiGithub } from 'react-icons/fi';
 
-const ProjectCard = ({ title, img, link, github, tags, desc }) => {
+const ProjectCard = ({ title, img, link, github, tags, desc, addStyle }) => {
     return (
-        <div className='w-full'>
+        <div className={`w-full ${addStyle && addStyle}`}>
             <a href={link} className="inline-block mb-2" target="_blank" rel='noreferrer'>
-                <img className='p-sm border rounded-md border-[#7b89a8] hover:border-mainBlue hover:translate-y-[-10px] transition-all duration-300 object-cover' src={img} alt={title} />
+                <img className='p-sm border rounded-md border-[#7b89a8] hover:border-mainBlue hover:translate-y-[-10px] transition-all duration-300 object-cover md:h-[225px] lg:h-[195px] xl:h-[235px] w-full' src={img} alt={title} />
             </a>
             <div className="card-body">
                 <div className="flex justify-between items-center mb-1">

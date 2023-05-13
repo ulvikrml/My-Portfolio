@@ -9,7 +9,7 @@ const Projects = () => {
         <h3>
         Here are a few of my favorite projects.
         </h3>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
           {ProjectsData.slice(0, 3).map((project, i) => <ProjectCard key={project.id} {...project} />)}
         </div>
         <div className='mt-8 w-full md:w-3/5 lg:w-2/5 mx-auto'>
