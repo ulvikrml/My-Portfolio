@@ -6,7 +6,7 @@ const ProjectCard = ({ title, img, link, github, tags, desc }) => {
     return (
         <div className='w-full'>
             <a href={link} className="inline-block mb-2" target="_blank" rel='noreferrer'>
-                <img className='p-sm border rounded-md border-[#7b89a8] hover:border-mainBlue hover:translate-y-[-10px] transition-all duration-300 object-cover w-full' src={img} alt={title} />
+                <img className='p-sm border rounded-md border-[#7b89a8] hover:border-mainBlue hover:translate-y-[-10px] transition-all duration-300 object-cover' src={img} alt={title} />
             </a>
             <div className="card-body">
                 <div className="flex justify-between items-center mb-1">
