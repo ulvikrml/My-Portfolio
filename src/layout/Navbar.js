@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import { FiMenu } from 'react-icons/fi'
+import { AiOutlineClose } from 'react-icons/ai'
+import { MenuContext } from '../context/MenuProvider'
 
 const Navbar = () => {
+    const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext)
     return (
-        <nav className='w-full flex justify-between h-[80px] items-center container mx-auto px-5'>
+        <header className='w-full flex justify-between h-[80px] items-center container mx-auto px-5'>
             <div className='text-white flex gap-2 text-xl font-bold items-center'>
                 <Link to="/">
                     <img className='w-[60px] hover:scale-75 hover:rotate-360 transition-all duration-500' src='/images/logo/logo.png' alt="logo" />
@@ -24,11 +28,18 @@ const Navbar = () => {
                     <span className='name-letter'>i</span>
                 </p>
             </div>
-            <div className='text-gray-500'>
+            <nav className='text-gray-500 hidden sm:block'>
                 <NavLink className='font-semibold' to="/" activeclassname="active">Home</NavLink>
                 <NavLink className="ml-10 font-semibold" to="/projects" activeclassname="active">Projects</NavLink>
+            </nav>
+            <div className='block sm:hidden'>
+            {isMenuOpen ?
+                <AiOutlineClose className='text-white text-2xl' onClick={()=>setIsMenuOpen(false)}/>
+                :
+                <FiMenu className='text-white text-2xl' onClick={()=>setIsMenuOpen(true)}/>
+            }
             </div>
-        </nav >
+        </header >
     )
 }
 

@@ -12,6 +12,12 @@
   .active{
     @apply text-white
   }
+.mobile-navbar {
+  @apply fixed w-full h-screen bg-neutral-100 -translate-x-full transition-transform duration-[0.3s] ease-[ease-in-out] left-0 top-0;
+}
+.mobile-navbar.open {
+  @apply translate-x-0;
+}
 
 }
 @layer base{
