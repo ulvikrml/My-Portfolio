@@ -9,6 +9,9 @@
   .name-letter{
     @apply hover:text-mainBlue inline-block  transition-all cursor-pointer
   }
+  .active{
+    @apply text-white
+  }
 
 }
 @layer base{
