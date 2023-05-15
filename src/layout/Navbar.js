@@ -6,26 +6,23 @@ import { MenuContext } from '../context/MenuProvider'
 
 const Navbar = () => {
     const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext)
+    const name = 'Ulvi'
+    const surname = 'Karimli'
     return (
-        <header className='w-full flex justify-between h-[80px] items-center container mx-auto px-5'>
+        <header className={`${isMenuOpen ? 'fixed bg-bgBlue z-[500]' : ''} w-full flex justify-between h-[80px] items-center container mx-auto px-5`}>
             <div className='text-white flex gap-2 text-xl font-bold items-center'>
                 <Link to="/">
                     <img className='w-[60px] hover:scale-75 hover:rotate-360 transition-all duration-500' src='/images/logo/logo.png' alt="logo" />
                 </Link>
                 <p>
-                    <span className='name-letter'>U</span>
-                    <span className='name-letter'>l</span>
-                    <span className='name-letter'>v</span>
-                    <span className='name-letter'>i</span>
+                    {[...name].map((letter, index) => {
+                        return <span key={index} className='name-letter'>{letter}</span>
+                    })}
                 </p>
                 <p>
-                    <span className='name-letter'>K</span>
-                    <span className='name-letter'>a</span>
-                    <span className='name-letter'>r</span>
-                    <span className='name-letter'>i</span>
-                    <span className='name-letter'>m</span>
-                    <span className='name-letter'>l</span>
-                    <span className='name-letter'>i</span>
+                    {[...surname].map((letter, index) => {
+                        return <span key={index} className='name-letter'>{letter}</span>
+                    })}
                 </p>
             </div>
             <nav className='text-gray-500 hidden sm:block'>
@@ -33,11 +30,11 @@ const Navbar = () => {
                 <NavLink className="ml-10 font-semibold" to="/projects" activeclassname="active">Projects</NavLink>
             </nav>
             <div className='block sm:hidden'>
-            {isMenuOpen ?
-                <AiOutlineClose className='text-white text-2xl' onClick={()=>setIsMenuOpen(false)}/>
-                :
-                <FiMenu className='text-white text-2xl' onClick={()=>setIsMenuOpen(true)}/>
-            }
+                {isMenuOpen ?
+                    <AiOutlineClose className='text-white text-2xl cursor-pointer pr-1 mr-1' onClick={() => setIsMenuOpen(false)} />
+                    :
+                    <FiMenu className='text-white text-2xl cursor-pointer' onClick={() => setIsMenuOpen(true)} />
+                }
             </div>
         </header >
     )

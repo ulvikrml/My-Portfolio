@@ -23,7 +23,8 @@ module.exports = {
           DEFAULT: '#00C7FF',
           'light': '#00698F'
         },
-        textGray: '#7b89a8'
+        textGray: '#7b89a8',
+        bgBlue: '#000A1F'
       },
       padding: {
         'sm': '6px',

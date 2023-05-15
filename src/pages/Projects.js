@@ -7,11 +7,11 @@ const Projects = () => {
         <div className='mt-10 container mx-auto mb-20 px-10 md:px-5'>
             <div className='flex items-center flex-col '>
                 <div className='text-center flex flex-col items-center'>
-                    <h2 className='text-6xl text-white mb-6 relative flex-shrink-0'>
+                    <h2 className='text-5xl md:text-6xl text-white mb-6 relative flex-shrink-0'>
                         Projects
                         <img className='w-10 absolute top-[-25px] right-[-35px]' src="/images/stickers/code.svg" alt="codingsticker" />
                     </h2>
-                    <p className='text-textGray'>I've built cool apps and websites using anything from HTML to React. Here are some of my favorite projects over the course of my journey.</p>
+                    <p className='text-textGray w-full lg:w-3/5 text-base md:text-xl lg:text-2xl'>I've built cool apps and websites using anything from HTML to React. Here are some of my favorite projects over the course of my journey.</p>
                 </div>
                 <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center'>
                     {ProjectsData.map((project, i) => <ProjectCard key={project.id} {...project} addStyle='mb-8'/>)}

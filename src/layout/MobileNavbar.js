@@ -1,20 +1,41 @@
 import React, { useEffect, useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import { MenuContext } from '../context/MenuProvider'
+
+
 const MobileNavbar = () => {
+    const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
+
     useEffect(() => {
-        document.body.style.overflowY = 'hidden';
+        const handleResize = () => {
+            setIsMenuOpen(false)
+        };
+
+        window.addEventListener('resize', handleResize);
 
         return () => {
-            document.body.style.overflowY = 'auto';
+            window.removeEventListener('resize', handleResize);
         };
-    }, []);
-    const { setIsMenuOpen } = useContext(MenuContext)
+    }, [setIsMenuOpen]);
+
+    useEffect(() => {
+        const body = document.body;
+        if (isMenuOpen) {
+            body.style.overflow = 'hidden';
+        } else {
+            body.style.overflow = 'auto';
+        }
+
+        return () => {
+            body.style.overflow = 'auto';
+        };
+    }, [isMenuOpen]);
+
     return (
-        <div className='fixed z-[999] w-full h-[100%] height-calc bottom-0 mt-[80px] bg-[#000A1F] transition-transform duration-[0.3s] ease-[ease-in-out] left-0 top-0'>
-            <nav className='text-gray-500 flex flex-col container mx-auto px-5 mt-8'>
+        <div className={`${isMenuOpen ? 'active-menu' : 'deactive-menu'}  mobile-navbar`}>
+            <nav className='text-gray-500 flex flex-col container mx-auto px-7 mt-8'>
                 <NavLink className='font-semibold pb-5 mb-5 border-b-xs border-white-200' to="/" activeclassname="active" onClick={() => { setIsMenuOpen(false) }}>Home</NavLink>
-                <NavLink className="font-semibold pb-5 border-b-xs border-white-200" to="/projects" activeclassname="active" onClick={() => {setIsMenuOpen(false) }}>Projects</NavLink>
+                <NavLink className="font-semibold pb-5 border-b-xs border-white-200" to="/projects" activeclassname="active" onClick={() => { setIsMenuOpen(false) }}>Projects</NavLink>
             </nav>
         </div >
     )

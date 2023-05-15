@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className='container mx-auto text-white border-t-xs border-[#000F2E] py-10 flex flex-col items-center relative'>
+    <footer className='container mx-auto text-white border-t-xs border-[#000F2E] py-10 flex flex-col items-center relative px-5'>
       <div className='flex flex-row w-[90%] lg:w-[63%] mx-auto border-b-xs border-gray-800 pb-10'>
         <div className='flex justify-between w-full flex-wrap'>
           {footerData.map(({ title, links }) => (
