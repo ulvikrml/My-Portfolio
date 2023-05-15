@@ -29,6 +29,10 @@ const MobileNavbar = () => {
         const body = document.body;
         if (isMenuOpen) {
             body.style.overflow = 'hidden';
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' 
+              });
         } else {
             body.style.overflow = 'auto';
         }

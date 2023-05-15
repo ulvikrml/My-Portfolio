@@ -9,7 +9,7 @@ const Navbar = () => {
     const name = 'Ulvi'
     const surname = 'Karimli'
     return (
-        <header className={`${isMenuOpen ? 'fixed bg-bgBlue z-[500]' : ''} w-full flex justify-between h-[80px] items-center container mx-auto px-5`}>
+        <header className={`${isMenuOpen ? 'bg-bgBlue z-[500]' : ''} w-full flex justify-between h-[80px] items-center container mx-auto px-5`}>
             <div className='text-white flex gap-2 text-xl font-bold items-center'>
                 <Link to="/">
                     <img className='w-[60px] hover:scale-75 hover:rotate-360 transition-all duration-500' src='/images/logo/logo.png' alt="logo" />
