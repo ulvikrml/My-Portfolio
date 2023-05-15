@@ -1,22 +1,29 @@
-import React, { useEffect, useContext } from 'react'
+import React, { useEffect, useContext, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { MenuContext } from '../context/MenuProvider'
 
 
 const MobileNavbar = () => {
     const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
-
+    const [previousWindowWidth, setPreviousWindowWidth] = useState(window.innerWidth);
     useEffect(() => {
         const handleResize = () => {
-            setIsMenuOpen(false)
+            const windowWidth = window.innerWidth;
+            const isHorizontalResize = windowWidth !== previousWindowWidth;
+            if (isHorizontalResize) {
+                setIsMenuOpen(false);
+            }
+            setPreviousWindowWidth(windowWidth);
         };
 
+        let previousWindowWidth = window.innerWidth;
         window.addEventListener('resize', handleResize);
 
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, [setIsMenuOpen]);
+    }, [setIsMenuOpen, previousWindowWidth]);
+
 
     useEffect(() => {
         const body = document.body;
