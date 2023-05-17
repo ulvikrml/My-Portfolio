@@ -77,4 +77,8 @@
   .mobile-navbar.active-menu {
     transform: translateY(0);
   } */
+
+  .width-calc{
+    width: calc(100%-50px) !important;
+  }
 }
