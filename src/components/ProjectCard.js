@@ -35,7 +35,7 @@ const ProjectCard = ({ title, img, link, github, tags, desc, addStyle }) => {
                 </p>
                 <ul className="flex gap-[6px]">
                     {tags.map((tag, i) => (
-                        <li className='text-sm text-white p-1 bg-[#192742] rounded-lg px-2 py-1' key={i}>{tag}</li>
+                        <li className='text-xs sm:text-sm text-white p-1 bg-[#192742] rounded-lg px-2 py-1' key={i}>{tag}</li>
                     ))}
                 </ul>
             </div>

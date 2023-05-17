@@ -1389,6 +1389,10 @@ body::-webkit-scrollbar-thumb {
   line-height: 1rem;
 }
 
+.text-\[3px\] {
+  font-size: 3px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1530,11 +1534,26 @@ body::-webkit-scrollbar-thumb {
   .xs\:w-\[310px\] {
     width: 310px;
   }
+
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 460px) {
   .s\:w-\[380px\] {
     width: 380px;
+  }
+
+  .s\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .s\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
@@ -1591,6 +1610,11 @@ body::-webkit-scrollbar-thumb {
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .sm\:last-of-type\:basis-0:last-of-type {

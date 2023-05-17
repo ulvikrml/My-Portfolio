@@ -3,7 +3,7 @@
         "id": 1,
         "title": "DukaMarket",
         "img" : "/images/projects/dukamarket.png",
-        "desc": "All the resources you need to watch movies.",
+        "desc": "Your one-stop shop for cutting-edge tech devices.",
         "link": "https://duka-market.netlify.app/",
         "github": "https://github.com/ulvikrml/Dukamarket-ecommerce",
         "tags": [
@@ -13,10 +13,23 @@
         ]
     },
     {
+        "id": 4,
+        "title": "Meal-kuhj",
+        "img": "/images/projects/mealrecipe.png",
+        "desc": "Discover global flavors with our diverse recipe hub.", 
+        "link": "https://react-meal-recipe-site.netlify.app/",
+        "github" : "https://github.com/ulvikrml/Meal-Recipes-React",
+        "tags": [
+            "React",
+            "SCSS",
+            "API"
+        ]
+    },
+    {
         "id": 2,
         "title": "FlexStart",
         "img": "/images/projects/flexstart.png",
-        "desc": "All the resources you need to watch movies.",
+        "desc": "Unlocking business potential, fostering growth.",
         "link": "https://ulvikrml.github.io/FlexStart-template/",
         "github" : "https://github.com/ulvikrml/FlexStart-template",
         "tags": [
@@ -29,7 +42,7 @@
         "id": 3,
         "title": "Eduford",
         "img": "/images/projects/eduford.png",
-        "desc": "All the resources you need to watch movies.",
+        "desc": "Empowering Education Online.",
         "link": "https://ulvikrml.github.io/Eduford-template/index.html",
         "github": "https://github.com/ulvikrml/Eduford-template",
         "tags": [
@@ -39,22 +52,10 @@
         ]
     },
     {
-        "id": 4,
-        "title": "Meal-kuhj",
-        "img": "/images/projects/mealrecipe.png",
-        "desc": "All the resources you need to watch movies.", "link": "https://react-meal-recipe-site.netlify.app/",
-        "github" : "https://github.com/ulvikrml/Meal-Recipes-React",
-        "tags": [
-            "React",
-            "SCSS",
-            "API"
-        ]
-    },
-    {
         "id": 5,
         "title": "Add-to-cart",
         "img": "/images/projects/addtocart.png",
-        "desc": "All the resources you need to watch movies.",
+        "desc": "Streamlined 'Add to Cart' functionality for shopping.",
         "link" : "https://add-to-card-mu.vercel.app/",
         "github": "https://github.com/ulvikrml/Add-to-card",
         "tags": [
@@ -67,7 +68,7 @@
         "id": 6,
         "title": "Javascript Tasks",
         "img": "/images/projects/jstasks.png",
-        "desc": "All the resources you need to watch movies.",
+        "desc": "Explore my JavaScript coding expertise.",
         "link" : "https://ulvikrmljavascripttasks.netlify.app/",
         "github": "https://github.com/ulvikrml/JS-Tasks",
         "tags": [
@@ -78,7 +79,7 @@
         "id": 7,
         "title": "React Tasks",
         "img": "/images/projects/reacttasks.png",
-        "desc": "All the resources you need to watch movies.",
+        "desc": "React mastery displayed through diverse coding tasks.",
         "link": "https://react-all-tasks.netlify.app/",
         "github" : "https://github.com/ulvikrml/React-tasks",
         "tags": [
