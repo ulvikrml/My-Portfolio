@@ -16,12 +16,12 @@ const Hero = () => {
             <div className='relative w-2/4 top-[30px]'>
                 <img src='/images/stickers/pop1.svg' alt='pop1' className='absolute left-[0px] top-[-300px] animate-imgbounce delay300 opacity-0 md:opacity-100' />
                 <img src='/images/stickers/html.svg' alt='html' className='absolute w-16 right-[-150px] sm:right-[-80px] md:right-[20px] top-[-200px] md:top-[-280px] animate-imgbounce delay500' />
-                <img src='/images/stickers/coder.svg' alt='coder' className='absolute opacity-0 md:opacity-100 w-[320px] scale-150 left-[-180px] animate-imgbounce delay300' />
+                <img src='/images/stickers/coder.svg' alt='coder' className='absolute opacity-0 md:opacity-100 w-[320px] left-[-180px] animate-imgbounce delay300' />
                 <img src='/images/stickers/js.svg' alt='js' className='absolute left-[-130px] md:left-[60px] top-[-35px] animate-imgbounce delay500' />
                 <img src='/images/stickers/code.svg' alt='code' className='absolute opacity-40 md:opacity-100 top-[-200px] md:top-[-80px] left-[-150px] md:left-[-70px] animate-imgbounce delay500' />
-                <img src='/images/stickers/dino.svg' alt='dino' className='absolute w-36 md:w-52 top-[115px] left-[-100px] md:left-[250px] animate-imgbounce delay500' />
+                <img src='/images/stickers/dino.svg' alt='dino' className='absolute w-36 md:w-52 top-[115px] left-[-100px] md:left-[120px] lg:left-[200px] animate-imgbounce delay500' />
                 <img src='/images/stickers/paintbrush.svg' alt='paintbrush' className='absolute right-[-200px] sm:right-[-150px] md:right-[-90px] top-[-60px] w-48 md:w-52 animate-imgbounce delay700' />
-                <img src='/images/stickers/laptop.svg' alt='laptop' className='absolute right-[-120px] sm:right-[-60px] top-[100px] w-40 md:w-56 animate-imgbounce delay600' />
+                <img src='/images/stickers/laptop.svg' alt='laptop' className='absolute right-[-120px] sm:right-[-150px] top-[100px] w-40 md:w-56 animate-imgbounce delay600' />
             </div>
             <button onClick={handleClickScroll} className='btn text-xl px-8 py-4 mt-8'>Tell me more</button>
         </section>
