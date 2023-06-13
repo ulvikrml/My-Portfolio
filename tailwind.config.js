@@ -39,10 +39,15 @@ module.exports = {
         wiggle: {
           '0%, 100%': { transform: 'translateY(-3px)' },
           '50%': { transform: 'translateY(3px)' },
+        },
+        fade: {
+          '0%' : {opacity: '0', transform : 'scale(4) translateY(0)'},
+          '100%' : {opacity: '1', transform : 'scale(1) translateY(0)'}
         }
       },
       animation: {
         imgbounce: 'wiggle 2s ease-in-out infinite',
+        heroFade: 'fade 1.5s cubic-bezier(.87,0,.13,1)'
       },
       rotate: {
         '360': '360deg',

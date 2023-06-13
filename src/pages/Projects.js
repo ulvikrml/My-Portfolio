@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ProjectsData from '../data/projects.json';
 import ProjectCard from '../components/ProjectCard';
 
 const Projects = () => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
     return (
         <div className='mt-10 container mx-auto mb-20 px-10 md:px-5'>
             <div className='flex items-center flex-col '>
@@ -14,7 +20,7 @@ const Projects = () => {
                     <p className='text-textGray w-full lg:w-3/5 text-base md:text-xl lg:text-2xl'>I've built cool apps and websites using anything from HTML to React. Here are some of my favorite projects over the course of my journey.</p>
                 </div>
                 <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center'>
-                    {ProjectsData.map((project, i) => <ProjectCard key={project.id} {...project} addStyle='mb-8'/>)}
+                    {ProjectsData.map((project, i) => <ProjectCard key={project.id} {...project} addStyle='mb-8' />)}
                 </div>
                 <div>
                     <p className="text-textGray text-center text-sm italic mt-8">Hey, hey, hey... I've got even more on <a className='text-mainBlue underline' target='_blank' rel='noreferrer' href="https://github.com/ulvikrml">my GitHub</a>!</p>
