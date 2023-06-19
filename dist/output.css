@@ -1225,11 +1225,6 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(25 39 66 / var(--tw-bg-opacity));
 }
 
-.bg-bgBlue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 10 31 / var(--tw-bg-opacity));
-}
-
 .bg-mainBlue {
   --tw-bg-opacity: 1;
   background-color: rgb(0 199 255 / var(--tw-bg-opacity));
@@ -1237,11 +1232,6 @@ body::-webkit-scrollbar-thumb {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .object-cover {

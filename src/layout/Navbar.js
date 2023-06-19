@@ -33,7 +33,7 @@ const Navbar = () => {
                 {isMenuOpen ?
                     <AiOutlineClose className='text-white text-2xl cursor-pointer pr-1 mr-1' onClick={() => setIsMenuOpen(false)} />
                     :
-                    <FiMenu className='text-white text-2xl cursor-pointer' onClick={() => setIsMenuOpen(true)} />
+                    <FiMenu className='text-white text-2xl cursor-pointer' onClick={() => setTimeout(() => setIsMenuOpen(true), 100)} />
                 }
             </div>
         </header >

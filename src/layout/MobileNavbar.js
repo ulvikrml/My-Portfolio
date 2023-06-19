@@ -29,14 +29,10 @@ const MobileNavbar = () => {
         const body = document.body;
         if (isMenuOpen) {
             body.style.overflow = 'hidden';
-            // window.scrollTo({
-            //     top: 0,
-            //     behavior: 'smooth' 
-            //   });
-              setTimeout(window.scrollTo({
+            window.scrollTo({
                 top: 0,
                 behavior: 'smooth' 
-              }),100);
+              });
         } else {
             body.style.overflow = 'auto';
         }
