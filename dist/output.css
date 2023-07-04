@@ -726,6 +726,10 @@ body::-webkit-scrollbar-thumb {
   pointer-events: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }

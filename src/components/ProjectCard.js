@@ -7,15 +7,8 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 const ProjectCard = ({ title, img, link, github, tags, desc, addStyle }) => {
     return (
-        // <div className={`w-full ${addStyle && addStyle}`}>
         <div className={`w-full xs:w-[310px] s:w-[380px] sm:w-[460px] md:w-[360px] lg:w-[310px] xl:w-[370px] ${addStyle && addStyle}`}>
-            {/* <a href={link} className="inline-block mb-2 w-full" target="_blank" rel='noreferrer'> */}
-            {/* <a href={link} className="inline-block mb-2 md:h-[225px] lg:h-[195px] xl:h-[235px] w-full" target="_blank" rel='noreferrer'> */}
-                {/* <img className='p-sm border rounded-md border-[#7b89a8] hover:border-mainBlue hover:translate-y-[-10px] transition-all duration-300 object-cover h-full w-full' src={img} alt={title} /> */}
-                {/* <LazyLoadImage effect='blur' min-width={'100%'} min-height={'100%'} className='p-sm border rounded-md border-[#7b89a8] hover:border-mainBlue hover:translate-y-[-10px] transition-all duration-300 object-cover h-full w-full' src={img} alt={title} /> */}
-            {/* </a> */}
             <a href={link} className="inline-block mb-2" target="_blank" rel='noreferrer'>
-                 {/* <img className='p-sm border rounded-md border-[#7b89a8] hover:border-mainBlue hover:translate-y-[-10px] transition-all duration-300 object-cover md:h-[225px] lg:h-[195px] xl:h-[235px] w-full' src={img} alt={title} /> */}
                 <LazyLoadImage effect='blur' min-width={'100%'} min-height={'100%'} className='md:h-[225px] lg:h-[195px] xl:h-[235px] p-sm border rounded-md border-[#7b89a8] hover:border-mainBlue hover:translate-y-[-10px] transition-all duration-300 object-cover h-full w-full' src={img} alt={title} />
              </a>
             <div className="card-body">

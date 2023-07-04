@@ -1,5 +1,18 @@
 [
     {
+        "id": 8,
+        "title": "Nike",
+        "desc": "You can find Nike boozers in my Nike store, you know.",
+        "img": "/images/projects/nike.png",
+        "link": "https://nike-store11.vercel.app/",
+        "github" : "https://github.com/ulvikrml/Nike-Store",
+        "tags": [
+            "ReactJS",
+            "Redux",
+            "TailwindCSS"
+        ]
+    },
+    {
         "id": 1,
         "title": "DukaMarket",
         "img" : "/images/projects/dukamarket.png",
@@ -20,7 +33,7 @@
         "link": "https://react-meal-recipe-site.netlify.app/",
         "github" : "https://github.com/ulvikrml/Meal-Recipes-React",
         "tags": [
-            "React",
+            "ReactJS",
             "SCSS",
             "API"
         ]
