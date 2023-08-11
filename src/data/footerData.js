@@ -1,10 +1,10 @@
 import { FiGithub } from 'react-icons/fi';
 import { SlSocialLinkedin } from 'react-icons/sl';
-import { SiHackerrank, SiUpwork } from 'react-icons/si';
+import { SiUpwork } from 'react-icons/si';
+import { BsInstagram } from 'react-icons/bs';
 import { MdOutlineEmail } from 'react-icons/md';
 import { BsWhatsapp } from 'react-icons/bs';
 import { FiTwitter } from 'react-icons/fi';
-import { RxDiscordLogo } from 'react-icons/rx';
 
 
 export const footerData =  [
@@ -26,22 +26,17 @@ export const footerData =  [
         links: [
             {
                 name: "Github",
-                link: "https://github.com/asgarliafin",
+                link: "https://github.com/ulvikrml",
                 icon: FiGithub
             },
             {
                 name: "LinkedIn",
-                link: "https://www.linkedin.com/in/afinasgarli/",
+                link: "https://www.linkedin.com/in/karimli/",
                 icon: SlSocialLinkedin
             },
             {
-                name: "HackerRank",
-                link: "https://www.hackerrank.com/afinasgarli",
-                icon: SiHackerrank
-            },
-            {
                 name: "Upwork",
-                link: "https://www.hackerrank.com/afinasgarli",
+                link: "https://www.hackerrank.com/ulvikrml",
                 icon: SiUpwork
             }
         ]
@@ -51,23 +46,18 @@ export const footerData =  [
         links: [
             {
                 name: "Email",
-                link: "mailto:afinasgarli0@gmail.com",
+                link: "mailto:ulvikrml@gmail.com",
                 icon: MdOutlineEmail
             },
             {
                 name: "Whatsapp",
-                link: "",
+                link: "https://wa.me/994507366767",
                 icon: BsWhatsapp
             },
             {
-                name: "Twitter",
-                link: "https://twitter.com/asgarliafin",
-                icon: FiTwitter
-            },
-            {
-                name: "Discord",
-                link: "https://twitter.com/asgarliafin",
-                icon: RxDiscordLogo
+                name: "Instagram",
+                link: "https://www.instagram.com/ulvi.krml/",
+                icon: BsInstagram
             }
         ]
     }
