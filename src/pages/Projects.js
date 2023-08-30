@@ -1,8 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react'
 import ProjectsData from '../data/projects.json';
 import ProjectCard from '../components/ProjectCard';
+import { MenuContext } from '../context/MenuProvider'
+
 
 const Projects = () => {
+    const { isMenuOpen } = useContext(MenuContext);
+
     useEffect(() => {
         window.scrollTo({
             top: 0,
@@ -10,7 +14,7 @@ const Projects = () => {
         });
     }, []);
     return (
-        <div className='mt-10 container mx-auto mb-20 px-10 md:px-5'>
+        <div className={`${isMenuOpen ? 'mt-33' : 'mt-10'} container mx-auto mb-20 px-10 md:px-5`}>
             <div className='flex items-center flex-col '>
                 <div className='text-center flex flex-col items-center'>
                     <h2 className='text-5xl md:text-6xl text-white mb-6 relative flex-shrink-0'>

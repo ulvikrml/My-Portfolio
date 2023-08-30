@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { MenuContext } from '../context/MenuProvider'
 
 const Hero = () => {
+    const { isMenuOpen } = useContext(MenuContext);
+
     const handleClickScroll = () => {
         const element = document.getElementById('projects');
         if (element) {
@@ -8,7 +11,7 @@ const Hero = () => {
         }
     }
     return (
-        <section className='flex flex-col items-center relative mt-28 md:mt-34 mx-auto px-5 animate-heroFade'>
+        <section className={`${isMenuOpen ? 'mt-46' : 'mt-24'} flex flex-col items-center relative md:mt-34 mx-auto px-5 animate-heroFade`}>
             <p className='text-xl text-white translate-y-[-40px]'>Hey, I'm Ulvi.</p>
             <h1 className='text-[50px] md:text-7xl font-semibold text-white sm:w-4/5 md:w-3/5 text-center mt-[-30px]'>
                 I enjoy  <span className='text-mainBlue'>building</span>  for the web.

@@ -32,7 +32,9 @@ module.exports = {
         'sm': '6px',
       },
       margin: {
-        34: '132px'
+        33: '131px',
+        34: '132px',
+        46: '186px'
       }, 
 
       keyframes: {
